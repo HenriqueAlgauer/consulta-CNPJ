@@ -8,21 +8,69 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="w-100 px-12 py-4 bg-stone-600 flex justify-between">
+  <body class="px-80">
+    <nav class="w-100 py-8 flex justify-between">
       <div>
-        <img
-          src="https://github.com/henriquealgauer.png"
-          class="w-24"
-          alt="logo"
-        />
+        <h1 class="text-4xl font-bold text-blue-800">CNPJOTO</h1>
       </div>
-      <div>
-        <ul>
-          <li class="button bg-red-800 px-4 py-2"><a href="#">Op1</a></li>
-        </ul>
+
+      <div class="flex items-center gap-10">
+        <a
+          class="px-5 shadow-sm font-semibold rounded text-lg text-gray-800 py-2 bg-gray-200"
+          href="#"
+          >Serviços</a
+        >
+        <a
+          class="px-5 shadow-sm font-semibold rounded text-lg text-gray-800 py-2 bg-gray-200"
+          href="#"
+          >Planos</a
+        >
+        <a
+          class="px-5 shadow-sm font-semibold rounded text-lg text-gray-800 py-2 bg-gray-200"
+          href="#"
+          >Contato</a
+        >
+        <a
+          class="px-3 shadow-md font-semibold rounded text-lg py-2 ml-4 bg-blue-800 text-white"
+          href="#"
+          >Login</a
+        >
       </div>
     </nav>
+
+    <main class="bg-gray-200 flex rounded-md py-12 my-16">
+      <div class="flex flex-col p-12 w-2/6 border-r border-black">
+        <h2 class="text-4xl font-semibold mb-4 text-gray-800">
+          Consulta rápida
+        </h2>
+        <span>CNPJ</span>
+        <input type="text" class="border rounded h-14 border-gray-300" />
+      </div>
+      <div class="w-4/6 p-12 font-semibold">
+        <h2 class="text-6xl text-gray-800">
+          Consulte o CNPJ de qualquer empresa do <br />Brasil de forma simples
+        </h2>
+      </div>
+    </main>
+
+    <div class="flex gap-32">
+      <div class="bg-gray-200 w-2/6 rounded p-8">
+        <h3 class="text-lg text-gray-800">Consulta <br />24 horas</h3>
+      </div>
+      <div class="bg-gray-200 w-2/6 rounded p-8">
+        <h3 class="text-lg text-gray-800">Consulta <br />24 horas</h3>
+      </div>
+      <div class="bg-gray-200 w-2/6 rounded p-8">
+        <h3 class="text-lg text-gray-800">Consulta <br />24 horas</h3>
+      </div>
+    </div>
   </body>
 </html>
